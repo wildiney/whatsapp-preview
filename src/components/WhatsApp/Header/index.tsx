@@ -1,11 +1,13 @@
+import { Link } from 'react-router-dom'
+
 const WhatsAppHeader = ({ picture, name, linkTo }: { picture: string | null, name: string, linkTo: string }) => {
   return (
     <div className='bg-black-500 h-13 w-auto mx-2 px-4 flex gap-4 items-center '>
 
       <div className='flex items-center gap-2 h-full'>
-        <a className='h-full flex items-center flex-col justify-center' href={linkTo}>
+        <Link className='h-full flex items-center flex-col justify-center' to={linkTo}>
           <span className='border-2 border-r-0 border-t-0 rotate-45 w-3 h-3 border-blue-500'></span>
-        </a>
+        </Link>
 
         <span className='flex items-center h-9 text-blue-500 font-normal  text-base'>3</span>
       </div>
