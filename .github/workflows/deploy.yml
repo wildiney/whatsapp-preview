@@ -3,7 +3,7 @@ name: Deploy WhatsApp UI preview
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
