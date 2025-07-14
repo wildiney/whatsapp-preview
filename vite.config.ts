@@ -8,7 +8,7 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: "/whatsapp/",
+  base: "/whatsapp-preview/",
   server: {
     open: true,
     port: 3001
